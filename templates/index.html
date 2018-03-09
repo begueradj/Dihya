@@ -9,13 +9,6 @@
            <h3><a ="#">{{article.title}}</a></h3>
            <div class="callout">
 	       Category:{{article.category }}
-               Tags:
-	           {% if article.tags and not HOME_HIDE_TAGS %}
-                       {% for tag in article.tags %}
-                           <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-                               {% if not loop.last %},{% endif %}
-                       {% endfor %}
-                   {% endif %}
            </div>
        </header>
    </article>
