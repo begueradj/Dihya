@@ -8,7 +8,10 @@
            <h2 class="article_date">{{article.locale_date}}</h2>
            <h3><a ="#">{{article.title}}</a></h3>
            <div class="callout">
-	       Category:{{article.category }}
+	       Category:
+	       <button type="button" class="btn btn-outline-primary btn-sm">
+	           {{article.category }}
+               </button>
            </div>
        </header>
    </article>
