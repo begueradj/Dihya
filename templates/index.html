@@ -1,21 +1,17 @@
 {% extends "base.html" %}
 {% block content%}
-<br/><br/><br/>
 {% for article in articles_page.object_list %}
-<div class="col-md-12">
-   <article>
-       <header>
-           <h2 class="article_date">{{article.locale_date}}</h2>
-           <h3><a ="#">{{article.title}}</a></h3>
-           <div class="callout">
-	       Category:
-	       <button type="button" class="btn btn-outline-primary btn-sm">
-	           {{article.category }}
-               </button>
-           </div>
-       </header>
-   </article>
+<div class="card" style="margin-bottom:16px;" >
+    <div class="card-header" style="border-bottom:0">
+        <a href="{{ SITEURL }}/{{ article.url }}" style="word-wrap:break-word;">{{ article.title }}</a>
+    </div>
+   <div class="card-body">
+        <p class="f5 silver">{{article.locale_date}} | category: <a href=""class="card-link">{{article.category}}</a></p>	 
+	<p class="card-text">{{article.summary}}</p>
+	<a href="{{SITEURL}}/{{article.url}}" class="btn btn-outline-primary" >Read more ...</a>
+    </div>
 </div>
 {% endfor %}
+{% include "partial/pagination.html"%}
 {% endblock %}
 

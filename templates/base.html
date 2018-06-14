@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-    <title>{{ SITENAME }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/dihya.css">
-     
-    
-    
-    {% if FAVICON %}
-    <link rel="shortcut icon" href="{{ FAVICON }}" type="image/x-icon">
-    <link rel="icon" href="{{ FAVICON }}" type="image/x-icon">
+   <title>{{ SITENAME }}</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/dihya.css">
+   
+   {% if FAVICON %}
+       <link rel="shortcut icon" href="{{ FAVICON }}" type="image/x-icon">
+       <link rel="icon" href="{{ FAVICON }}" type="image/x-icon">
    {% endif %}
 
-    </head>
-<body>
-    <div class="container">
-    <nav class="navbar navbar-toggleable-md  navbar-inverse fixed-top  navbar-custom">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseNavbar" aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" ></span>
-        </button>
+</head>
+<body style="padding-top:70px;">
+   <div class="container">
+       <nav class="navbar navbar-toggleable-md  navbar-inverse fixed-top  navbar-custom">
+           
+           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapseNavbar" aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon" ></span>
+           </button>
         
-        <a class="navbar-brand" href="#">BEGUERADJ Billal</a>
+           <a class="navbar-brand" href="#">BEGUERADJ Billal</a>
   
-        <div class="collapse navbar-collapse" id="collapseNavbar">
-            <ul class="navbar-nav navbar-default ml-auto">          
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" aria-expanded="false" href="#">Archives</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" aria-expanded="false" href="#">Categories </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" aria-expanded="false" href="#">Home</a>
-                </li>
-            </ul>       
-        </div>
-    </nav>
-    </div>
-    
-    <div class="container">
-  
-
-        <h1>Hello World</h1>     
-        {% block content%}
-        Bonjour
-        {% endblock %}
-        <footer>
-             Billal BEGUERADJ
-        </footer>
-    </div>
+           <div class="collapse navbar-collapse" id="collapseNavbar">
+               <ul class="navbar-nav navbar-default ml-auto">          
+                   <li class="nav-item">
+                       <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" aria-expanded="false" href="#">Archives</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" aria-expanded="false" href="#">Categories </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" aria-expanded="false" href="#">Home</a>
+                   </li>
+               </ul>       
+           </div>
+       </nav>   
+       {% block content%}
+       {% endblock %}  
+       <div class="footer">
+           &copy;Billal BEGUERADJ 2017 - 2018
+       </div>      
+   </div>
+   
 </body>
 </html>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block meta %}
+<meta name="author" content="{{ article.author.name }}" />
+<meta name="description" content="{{ article.summary|striptags|escape }}" />
+<meta name="keywords" content="{{ article.tags|join(', ')|escape }}">
+
+{% endblock %}
+
+{% block title %} &ndash; {{ article.title|striptags|escape }}{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col">
+    <p class="f5 silver">{{article.locale_date}} | category: <a href="">{{article.category}}</a></p>
+    </div>
+</div>
+{{article.content}}
+{% endblock %}
