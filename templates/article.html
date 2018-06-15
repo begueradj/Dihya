@@ -10,9 +10,21 @@
 {% block title %} &ndash; {{ article.title|striptags|escape }}{% endblock %}
 {% block content %}
 <div class="row">
-    <div class="col">
-    <p class="f5 silver">{{article.locale_date}} | category: <a href="">{{article.category}}</a></p>
-    </div>
+  <div class="col">
+    <p class="f5 silver">{{article.locale_date}} | category: <a href="" class="badge badge-pill badge-primary">{{article.category}}</a></p>
+  </div>
 </div>
 {{article.content}}
+
+<div class="row">
+    <div class="col">
+      {% if article.tags %}
+      <p class="f5 silver">Tags: 
+    {% for tag in article.tags %}
+        <a href="" class="badge badge-pill badge-primary">{{tag}}</a>
+	{% endfor %}
+	</p>
+    {% endif %}
+    </div>
+</div>
 {% endblock %}
