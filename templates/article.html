@@ -21,7 +21,7 @@
       {% if article.tags %}
       <p class="f5 silver">Tags: 
     {% for tag in article.tags %}
-        <a href="" class="badge badge-pill badge-primary">{{tag}}</a>
+        <a href="{{SITEURL}}/{{tag.url}}" class="badge badge-pill badge-primary">{{tag}}</a>
 	{% endfor %}
 	</p>
     {% endif %}
