@@ -11,7 +11,7 @@
 {% block content %}
 <div class="row">
   <div class="col">
-    <p class="f5 silver">{{article.locale_date}} | category: <a href="" class="badge badge-pill badge-primary">{{article.category}}</a></p>
+    <p class="f5 silver">{{article.locale_date}} | category: <a href="{{SITEURL}}/{{article.category.url}}" class="badge badge-pill badge-primary">{{article.category}}</a></p>
   </div>
 </div>
 {{article.content}}
